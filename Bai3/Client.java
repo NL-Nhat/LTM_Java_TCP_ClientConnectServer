@@ -28,6 +28,7 @@ public class Client {
                 System.out.println("=========================");
                 System.out.print("Nhap lua chon: ");
                 choice = sc.nextInt();
+                sc.nextLine();
                 
                 switch (choice) {
                     case 1, 2:
@@ -53,7 +54,7 @@ public class Client {
 
                     case 4, 5:
                         output.writeUTF(String.valueOf(choice));
-                        System.out.println("Nhap chuoi: ");
+                        System.out.print("Nhap chuoi: ");
                         String chuoi = sc.nextLine();
                         output.writeUTF(chuoi);
                         output.flush();
